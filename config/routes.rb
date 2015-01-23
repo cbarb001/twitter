@@ -20,5 +20,5 @@ Rails.application.routes.draw do
   # GET a page at /static_pages/about 
   get 'static_pages/about'
 
-  
+  get 'static_pages/contact'
 end
