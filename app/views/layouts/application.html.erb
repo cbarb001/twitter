@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title><%=yield(:title)%></title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 
-<%= yield %>
-
-</body>
+    <!-- Work around for Internet Explorer browsers that are < version 9 -->
+    <%= render 'layouts/shim' %>
+  </head>
+  <body>
+  	<!-- header -->
+    <%= render 'layouts/header' %>
+    <!-- main content -->
+    <div class="container">
+      <%= yield %>
+    </div>
+    <!-- footer -->
+    <%= render 'layouts/footer' %>
+  </body>
 </html>

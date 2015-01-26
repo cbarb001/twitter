@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 
+#Bootstrap used for styling /boostrap-sass uses sass instead of the Less CSS framework
+gem 'bootstrap-sass', '3.2.0.0'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.1'
 # Use Uglifier as compressor for JavaScript assets
