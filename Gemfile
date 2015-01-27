@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 
+# hashes to password to be saved in the database
+gem 'bcrypt', '3.1.7'
+
 #Bootstrap used for styling /boostrap-sass uses sass instead of the Less CSS framework
 gem 'bootstrap-sass', '3.2.0.0'
 
