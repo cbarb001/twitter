@@ -6,6 +6,15 @@ gem 'rails', '4.2.0'
 # hashes to password to be saved in the database
 gem 'bcrypt', '3.1.7'
 
+# Used to seed the database with fake info
+gem 'faker', '1.4.2'
+
+# Used for pagination
+gem 'will_paginate',           '3.0.7'
+
+# Styles will-paginate with Bootstrap
+gem 'bootstrap-will_paginate', '0.0.10'
+
 #Bootstrap used for styling /boostrap-sass uses sass instead of the Less CSS framework
 gem 'bootstrap-sass', '3.2.0.0'
 
