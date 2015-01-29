@@ -1,5 +1,7 @@
 Rails.application.routes.draw do  
 
+  get 'password_resets/new'
+
   # GET means get a page
   # POST submit a form / create things
   ##### EX/ submit a form and a new user is created in the database
@@ -16,5 +18,5 @@ Rails.application.routes.draw do
   delete 'logout'  => 'sessions#destroy'
   resources :users
   resources :account_activations, only: [:edit]
-  
+  resources :password_resets,     only: [:new, :create, :edit, :update] 
 end
