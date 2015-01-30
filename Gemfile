@@ -9,6 +9,15 @@ gem 'bcrypt', '3.1.7'
 # Used to seed the database with fake info
 gem 'faker', '1.4.2'
 
+# Image upload
+gem 'carrierwave', '0.10.0'
+
+# Resize image
+gem 'mini_magick', '3.8.0'
+
+# Store image in the cloud
+gem 'fog', '1.23.0'
+
 # Used for pagination
 gem 'will_paginate',           '3.0.7'
 

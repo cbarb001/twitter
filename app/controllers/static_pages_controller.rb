@@ -3,7 +3,10 @@ class StaticPagesController < ApplicationController
 
   # home action defined using def keyword
   def home
-  	# with nothing in this method, home just renders the view
+    if logged_in?
+  	  @micropost = current_user.microposts.build if logged_in?
+      @feed_items = current_user.feed.paginate(page: params[:page])
+    end
   end
 
   # help action defined using the def keyword
